@@ -1,10 +1,10 @@
-window.onload = function() {
+/* window.onload = function() {
     let preloader = document.getElementById('preloader');
     preloader.classList.add('hide-preloader');
     setInterval(function() {
           preloader.classList.add('preloader-hidden');
     }, 990);
-}
+} */
 
 let typed = new Typed('#typed', { // Тут id того блока, в которм будет анимация
     stringsElement: '#typed-strings', // Тут id блока из которого берем строки для анимации
