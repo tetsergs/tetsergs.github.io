@@ -1,10 +1,17 @@
-/* window.onload = function() {
-    let preloader = document.getElementById('preloader');
-    preloader.classList.add('hide-preloader');
-    setInterval(function() {
-          preloader.classList.add('preloader-hidden');
-    }, 990);
-} */
+var hellopreloader = document.getElementById("hellopreloader_preload");
+    function fadeOutnojquery(el){el.style.opacity = 1;
+        var interhellopreloader = setInterval(
+            function(){el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <=0.05){ 
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }},16);}
+                window.onload = function(){
+                    setTimeout(
+                        function(){
+                            fadeOutnojquery(hellopreloader);
+                        },1000);
+                    };
 
 let typed = new Typed('#typed', { // Тут id того блока, в которм будет анимация
     stringsElement: '#typed-strings', // Тут id блока из которого берем строки для анимации
