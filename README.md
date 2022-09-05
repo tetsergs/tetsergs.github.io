@@ -1,1 +1,0 @@
-# tetsergs.github.io
